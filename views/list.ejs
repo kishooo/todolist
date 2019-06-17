@@ -12,7 +12,9 @@
         <li>lunch</li>
         <li>go to gym</li>
         <li>sleep</li>
-        <li><%= newItem %></li>
+        <% for(var i=0;i<newItems.length; i++) { %>
+            <li><%= newItems[i] %></li>
+        <% } %>
     </ul>
     <form action="/" method="post">
     <input type="text" name="input" placeholder="thing you will do">

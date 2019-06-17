@@ -21,7 +21,7 @@ app.get("/",function(req,res){
     var dateForm=today.toLocaleDateString("en-GB",option);
     var selectName = dayName[today.getDay()];
     var day = "";
-    res.render("list",{kindOfDay: dateForm ,newItem: items});
+    res.render("list",{kindOfDay: dateForm ,newItems: items});
     /*if(today.getDay() === 1){
         day="weekend";
         res.render('list', {kindOfDay: day});
